@@ -1,0 +1,115 @@
+.atm-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 500px;
+    background-color: white;
+
+}
+
+.deposit,
+.show-balance {
+    width: 30%;
+    margin: 20px;
+    margin-right: 50px;
+    background-color: white;
+    color: blue;
+    border: 1px solid lightblue;
+
+    height: 50px;
+    border-radius: 5px;
+}
+
+.withdraw,
+.history {
+    width: 30%;
+    margin: 20px;
+    margin-left: 50px;
+    background-color: white;
+    color: blue;
+    border: 1px solid lightblue;
+    height: 50px;
+    border-radius: 5px;
+}
+
+body {
+    background-color: lightGrey;
+}
+
+.outer {
+    background-color: white;
+    border-right: 4px solid lightgreen;
+    width: 500px;
+}
+
+.deposit-button-submit,
+.withdraw-button-submit {
+    width: 75px;
+    color: white;
+    font-size: 14px;
+    background-color: blue;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.input-deposit,
+.input-withdraw {
+    font-size: 14px;
+    height: 20px;
+    border: 1px solid blue;
+}
+
+.display-on-click-withdraw {
+    display: none;
+}
+
+.display-on-click-deposit {
+
+    display: none;
+}
+
+.current-balance {
+    display: none;
+}
+
+button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+.show-history {
+    display: none;
+}
+
+.error-message,
+.error-message-for-withdraw {
+    color: red;
+    margin: 0px;
+    display: none;
+}
+
+.error-message-for-transaction {
+    display: none;
+    color: blue;
+}
+
+.background-color-for-button {
+    background-color: blue;
+    color: white;
+}
+
+.background {
+    background-color: white;
+    color: blue;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    </head>
+
+    <body>
+        <script>
+            let people = [{ name: "john", age: 12, phoneNumber: "9999999999999999" },
+                {
+                    name: "ram",
+                    age: 16,
+                    phoneNumber: "9999999999999999"
+                },
+                {
+                    name: "ravi",
+                    age: 18,
+                    phoneNumber: "98888888888888888"
+                }, {
+                    name: "rani",
+                    age: 24,
+                    phoneNumber: "9999999999999999"
+                }, {
+                    name: "raju",
+                    age: 11,
+                    phoneNumber: "9999999999999999"
+                }
+            ];
+
+
+            /* function isEligibleVoterInIndia(age) {
+                 return age >= 18;
+             }
+
+             function isEligibleVoterInUs(age) {
+                 return age >= 16;
+             }
+
+             function getCountOfEligibleVoters(people, isEligible) {
+                 let eligibleVoter = people.filter(isEligible);
+                 alert(eligibleVoter);
+                 let count = 0;
+                 for (let i = 0; i < people.length; i++) {
+                     if (isEligible(people[i].age)) {
+                         count += 1
+                     }
+                 }
+                 return count;
+             }*/
+            let eligibleVotersInIndia = people.filter(isEligibleVoterInIndia);
+
+            function isEligibleVoterInIndia(person) {
+                return person.age >= 18;
+            }
+            // alert(eligibleVotersInIndia.length)
+            /* alert(getCountOfEligibleVoters(people, isEligibleVoterInIndia));
+             alert(getCountOfEligibleVoters(people, isEligibleVoterInUs));*/
+
+            let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+            let oddNumbersInArray = array1.filter(isCheckOddNumber);
+
+            function isCheckOddNumber(number) {
+                return number % 2 === 1;
+            }
+            //alert((array1.filter(number => number % 2 == 0)).length); //arraow function
+            //alert(oddNumbersInArray.length);
+            //
+            let data = people.filter(getNames);
+
+            function getNames(person) {
+                return person.name;
+
+            }
+
+            //  alert(data)
+
+
+            let ages = [10, 33, 16, 55];
+
+            function isEligibleToVoter(age) {
+                return age >= 18;
+            }
+            let eligibleVoters = ages.filter(isEligibleToVoter);
+            // alert(eligibleVoters.length);
+
+
+
+
+
+
+
+
+
+
+            //no of eligible voters names
+
+
+            function isEligibleToVoterInIndia(person) {
+                return person.age >= 18;
+            }
+            let eligibleVoter = people.filter(isEligibleToVoterInIndia);
+            //document.write(eligibleVoter);
+
+            function getNamesOfEligibleVoter(eligibleVoter) {
+                for (let i = 0; i < eligibleVoter.length; i++) {
+                    //alert(people[i].name);
+                }
+            }
+            getNamesOfEligibleVoter(eligibleVoter);
+
+
+
+
+
+
+
+
+
+            //for each function
+            let age = [32, 33, 16, 40];
+            //age.forEach(age => alert(age));
+
+
+
+            let num = [65, 44, 12, 4];
+            num.forEach(myFunction);
+
+            function myFunction(item, index, arr) {
+                arr[index] = item * 5;
+            }
+            //alert(num);
+
+
+
+
+            //map function in javascript
+            let primeNumbers = [2, 3, 5, 7, 11, 13];
+
+            function incrementNumberBy2(num) {
+                return num = num + 2;
+            }
+            let incrementedPrimes = primeNumbers.map(incrementNumberBy2);
+            // alert(incrementedPrimes);
+            let numbers = [3, 5, 6, 7, 8];
+
+            let multipliesNumbers = numbers.map(num => num * 2);
+            alert(multipliesNumbers);
+
+
+
+
+            //find example
+            let evenNumbers = [2, 4, 6, 9];
+            let evenNumbersInArray = evenNumbers.find(num => num > 4);
+            alert(evenNumbersInArray);
+        </script>
+    </body>
+
+</html>

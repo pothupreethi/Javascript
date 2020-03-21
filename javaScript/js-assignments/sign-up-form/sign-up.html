@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign-up.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+    <div class="main-section" id="mainSection">
+      <div class="outside" id="outSide">
+        <label>Set your favourite color</label>
+        <input type="color" id="colorModificationBox1" name="head" value="#0099cc">
+        <input type="color" id="colorModificationBox2" name="head" value="#a300cc">
+      </div>
+
+
+      <div class="login-form">
+        <div class="sign-up">
+          <h1>Sign up</h1>
+          <p class="fill-this-form">Please fill in this form to create an account</p>
+
+        </div>
+        <div class="form">
+          <form id="dataForm">
+            <div class="col-1">
+              <div class="signup-form-first-name">
+                <input type="text" placeholder="FirstName" class="first-name" name="firstName" style="width:90%" id="firstName" required>
+                <p class="error-message" id="errorMessageForFirstName">Invalid FirstName</p>
+              </div>
+              <div class="signup-form-last-name">
+                <input type="text" placeholder="LastName" class="last-name" style="width:90%" id="lastName" required>
+                <p class="error-message" id="errorMessageForLastName">Invalid LastName</p>
+              </div>
+            </div>
+
+            <div class="mobile-num">
+              <input type="text" placeholder="MobileNumber" class="mobile-number" id="mobileNumber" required>
+              <p class="error-message" id="errorMessageForMobileNumber">Invalid MobileNumber</p>
+            </div>
+            <div class="email-div">
+              <input type="text" placeholder="Email" vlaue="Email" id="email" class="email" required>
+              <p class="error-message" id="errorMessageForEmailAddress">Invalid Email Address</p>
+            </div>
+            <div class="password-div">
+              <input type="password" placeholder="Password" id="password" class="password" required>
+              <p class="error-message" id="errorMessageForPassword">password must contain one capital letter and one small letter</p>
+            </div>
+            <div class="confirmed-password-div">
+              <input type="password" placeholder="Confirmed-password" class="confirmed-password" id="confirmedPassword" required>
+              <p class="error-message" id="errorMessageForConfirmedPassword"> password didn't match</p>
+            </div>
+        </div>
+        <div class="gender">
+          <lable id="errorForGender">Select your gender</lable>
+
+          <div class="male"> <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label></div>
+          <div class="female"> <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </div>
+          <div class="other"> <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+          </div>
+          <div>
+          </div>
+        </div>
+        <div class="branches-date">
+          <div>
+            <label for="branch">Select your branch</label>
+            <select id="branches">
+                 <option value="CSE">CSE</option>
+                  <option value="ECE">ECE</option>
+                 <option value="Civil">Civil</option>
+                   <option value="mech">Mech</option>
+                  </select>
+          </div>
+          <div class="date-of-birth-div">
+            <label for="date">DOB</label>
+            <input type="date" class="date-of-birth" id="dateOfBirth" value="dd//mm//yy">
+            <p class="error-message" id="errorMessageForDateOfBirth">Invalid date of birth</p>
+          </div>
+
+        </div>
+
+
+        <div class="address-div">
+          <label for="address" class="address-main">Enter your adrress</label>
+          <input type="text" class="address" placeholder="Type your address" id="address " required>
+        </div>
+        <div class="set-typing ">
+          <label for="typing " class="set-typing1">Set your typing</label>
+          <input type="range" id="cowbell" name="cowbell" class="range-of-typing" min="0" max="100" value="90" step="10">
+
+
+        </div>
+        <div class="check-terms ">
+          <input type="checkbox" id="terms" class="Terms">
+          <label for="terms ">I accept the<span class="terms-of-use "> Terms of use</span> &<span class="terms-of-use ">Private policy</span></label></div>
+        <p class="error-message " id="errorMessageForTermsAndCondition ">Accept the terms and conditions</p>
+        <p class="error-message " id="errorMessageForGender ">please select the gender</p>
+        <div class="submit-div ">
+          <input class="signup-button " type="button " value="Signup " id='signUp'>
+        </div>
+
+      </div>
+      </form>
+      <div class="login ">
+        <label>Already have an account? <span style="text-decoration:underline "> Login</span></label>
+      </div>
+
+    </div>
+
+    <script src="sign-up.js "></script>
+  </body>
+
+</html>

@@ -1,0 +1,146 @@
+/*button {
+    background-color: #4CAF50;
+     Green
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.accelerate {
+    background-color: white;
+    color: skyblue;
+    border: 1px solid skyblue;
+}
+
+.decelerate {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.car-fleet-app {
+    max-width: 400px;
+}
+
+.operation-on-car {
+    display: flex;
+    justify-content: space-between;
+}
+
+.status {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.onclick-change-background-color-accelerate-btn {
+    background-color: skyblue;
+    color: white;
+}
+*/
+
+button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.car-fleet-app {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.add-new-car-div {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-car {
+    background-color: #0040ff;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+
+}
+
+
+.start-or-stop {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 7px;
+    border: 1px solid green;
+    border: 2px solid lightgreen;
+}
+
+.status-of-the-car {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.acceleration-deceleration-operations {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.acceleration {
+    background-color: white;
+    border: 1px solid skyblue;
+    color: skyblue;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.deceleration {
+    background-color: white;
+    border: 1px solid brown;
+    color: brown;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.stop {
+    background-color: brown;
+
+}
+
+.stop:hover {
+    border: 2px solid orange;
+
+}
+
+.accelerate {
+    background-color: skyblue;
+    color: white;
+}
+
+.decelerate {
+    background-color: brown;
+    color: white;
+}
+
+body {
+    background-color: #f3f3f3;
+}

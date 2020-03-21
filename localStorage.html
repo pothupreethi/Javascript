@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        let testObject = { 'one': 1, 'two': 2, 'three': 3 };
+        localStorage.setItem('testObject', JSON.stringify(testObject));
+        let retrievedObject = localStorage.getItem('testObject');
+        console.log('retrievedObject:', JSON.parse(retrievedObject));
+    </body>
+
+</html>

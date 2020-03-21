@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        <script>
+            //factory function
+            function createPerson(name, age, gender) {
+                let person = {
+                    name: name,
+                    age: age,
+                    gender: gender,
+                }
+                return person;
+            }
+            //console.log(createPerson('vani', 19, 'female'))
+            //constructor function
+            //new
+            //1.{}
+            //2.this
+            //3.return
+            function Person(name, age, gender) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+                this.run = function() {
+                    console.log("person is running")
+                }
+            }
+            //console.log(new Person('preethi', 34, 'female'))
+            let sampleObject = {};
+            //console.log(sampleObject.constructor);
+            let sampleArray = [];
+            //console.log(sampleArray.constructor);
+            let sampleString = "";
+            //console.log(sampleString.constructor);
+            let isTrue = false;
+            //console.log(isTrue.constructor);
+
+            function preethi() {}
+            //console.log(preethi.constructor);
+            let number = 6;
+            //console.log(number.constructor);
+            let map = new Map();
+            //console.log(map.constructor);
+            let set = new Set();
+            //console.log(set.constructor);
+            let symbol = Symbol();
+            //console.log(symbol.constructor);
+            const date = new Date();
+            //console.log(date);
+
+
+
+            function Address(street, city, zipcode) {
+                this.street = street;
+                this.city = city;
+                this.zipcode = zipcode;
+                this.showAddress = function() {
+                    console.log(`street:${street},city:${city},zipcode:${zipcode}`);
+                }
+            }
+            console.log(new Address("smt colony", 'yemmiganur', 518360));
+            console.log(Address.showAddress());
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cars Fleet</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!-- Write your html code from here-->
+    <div class="car-fleet-app" id="carApp">
+      <div class="add-new-car-div">
+        <button id="addNewCar" class="add-car">Add Car</button>
+      </div>
+      <div class="car-div" id="carDiv">
+        <div class="start-or-stop-container">
+          <button class="start-or-stop" id="startOrStop">Start</button>
+        </div>
+        <div class="status-of-the-car">
+          <p>Status:&nbsp; </p>
+          <p id="carCurrentStatus" class="car-current-status">Stopped</p>
+        </div>
+        <div class="acceleration-deceleration-operations">
+          <button id="accelerateCarSpeed" class="acceleration">Accelerate</button>
+          <button id="decelerateCarSpeed" class="deceleration">Decelerate</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+
+</html>

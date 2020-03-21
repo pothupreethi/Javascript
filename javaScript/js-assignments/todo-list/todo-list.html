@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign Up</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <link rel="stylesheet" href="todo-list.css" />
+  </head>
+
+  <body>
+
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <h1>todos</h1>
+    <div class="todo-app">
+      <div class="input-div">
+        <i style='font-size:36px' class='fas'>&#xf107;</i>
+        <input type="text" class="input-todo-list" id="getInputFromUser" placeholder="Next Todo.......">
+      </div>
+      <div class="add-element">
+        <ul id="myList"></ul>
+      </div>
+      <div class="status-bar" id="statusBar">
+        <p id="itemsLeft">0 iterms left</p>
+        <div class="inner-status-bar">
+          <button class="all" id="all">All</button>
+          <button class="active-button" id="activeButton">Active</button>
+          <button class="complete-button" id="completeButton">complete</button>
+        </div>
+        <button class="clear-completed" id="clearCompleted">clearCompleted</button>
+      </div>
+    </div>
+    <script src="todo-list.js"></script>
+    <!-- Write your html code from here-->
+  </body>
+
+</html>

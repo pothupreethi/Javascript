@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        <script>
+            // load image by callback function
+            /* function loadImage(url, ONSccessLoadImage) {
+                 const image = document.createElement('img');
+                 image.onload = () => {
+                     console.log(`${url} Image is loading`);
+                     ONSccessLoadImage(image);
+                 }
+                 setTimeout(() => {
+                     image.src = url;
+                 }, 3000);
+             }
+             loadImage("../portfolio-website/img_2.jpg", image => {
+                 document.body.appendChild(image);
+                 console.log("image 1 is appended to body");
+
+             });*/
+            //callback hell
+
+
+
+
+
+            //promise
+            let link1 = "../portfolio-website/img_2.jpg";
+            let link2 = "../portfolio-website/img_1.jpg";
+            let array = [link1, link2];
+
+            function loadImageWithPromise(url) {
+                return new Promise((resolve) => {
+                    const image = document.createElement('img');
+                    image.onload = () => {
+                        console.log(`${url} Image is loading`);
+                        //resolve("Random");
+                        resolve(image);
+
+                    }
+                    setTimeout(() => {
+                        image.src = url;
+                    }, 3000);
+
+                });
+            }
+            const something = loadImageWithPromise("../portfolio-website/img_2.jpg")
+            console.log(something);
+            let firstPromise = something.then((response => {
+                document.body.appendChild(response);
+                return loadImageWithPromise("../portfolio-website/img_1.jpg");
+                /* return new Promise((resolve) => {
+                     resolve("random");
+                 })*/
+                //return "Random";
+            }));
+
+            console.log(firstPromise);
+            let secondPromise = firstPromise.then(response => {
+                document.body.appendChild(response);
+                return loadImageWithPromise("../portfolio-website/img_1.jpg");
+            })
+            console.log(secondPromise);
+            secondPromise.then(response => {
+                console.log(response);
+            })
+            //rough implementation
+
+            /* Person(){
+                this.state="pending";
+                this.listenerfns=[];
+                this.reslove(response);
+            }
+            // in th
+            reslove(response){
+                  this.state="resloved";
+                  this.listernerFns.forEach(listernerFns=>{
+                      listernerFns(response);
+                  });
+              }
+              
+              .then(){
+                  
+                  }
+                  
+                  */
+                  
+                  //in the asynchronous methos if 
+        </script>
+
+    </body>
+
+</html>

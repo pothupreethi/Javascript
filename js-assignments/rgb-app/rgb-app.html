@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RGB App</title>
+    <link rel="stylesheet" href="rgb-app.css" />
+  </head>
+
+  <body>
+    <!--<div id="console-root"></div>
+      <script src="https://tap.ibhubs.in/utils/console.js"></script>-->
+    <script src="rgb-app.js"></script>
+    <div class="component">
+      <div class="left-component" id="leftside">
+        <div class="btn-right-side">
+          <button onclick="onClickChangeColor('leftside','red')">Red</button>
+          <button onclick="onClickChangeColor('leftside','blue')">Blue</button>
+          <button onclick="onClickChangeColor('leftside','green')">Green</button>
+          <button onclick="onClickChangeColor('leftside','white')">White</button>
+        </div>
+        <div class="Left-side-arrows">
+          <button class="onclick" onclick="shiftLeft()"><img src="assets/left-arrow.png "/></button>
+          <button class="onclick" onclick="shiftRight()"><img src="assets/right-arrow.png "/></button>
+          <button class="onclick" onclick="moveUpwards()"><img src="assets/up-arrow.png "/></button>
+          <button class="onclick" onclick="moveDownwards()"><img src="assets/down-arrow.png "/></button>
+
+        </div>
+
+      </div>
+      <div class="right-component" id="rightside">
+        <div class="divsion-1 color-red" id="div1" style="background-color:red">
+          <div class="col-1">
+            <button onclick="onClickChangeColor('div1','red')">Red</button>
+            <button onclick="onClickChangeColor('div1','blue')">Blue</button>
+            <button onclick="onClickChangeColor('div1','green')">Green</button>
+            <button onclick="onClickChangeColor('div1','white')">White</button>
+
+          </div>
+          <div class="right-first-column order-col-1">
+            <button class="onclick" onclick="shiftColorDivision('div1','div3')"><img src="assets/up-arrow.png"/></button>
+            <button class="onclick" onclick="shiftColorDivision('div1','div2')"><img src="assets/down-arrow.png"/></button>
+          </div>
+        </div>
+        <div class="division-2 color-blue" id="div2" style="background-color:blue">
+          <div class="col-2">
+            <button onclick="onClickChangeColor('div2','green')">Red</button>
+            <button onclick="onClickChangeColor('div2','blue')">Blue</button>
+            <button onclick="onClickChangeColor('div2','green')">Green</button>
+            <button onclick="onClickChangeColor('div2','white')">White</button>
+          </div>
+          <div class="right-second-column order-col-2">
+            <button class="onclick" onclick="shiftColorDivision('div2','div1')"><img src="assets/up-arrow.png"/></button>
+            <button class="onclick" onclick="shiftColorDivision('div2','div3')"><img src="assets/down-arrow.png"/></button>
+          </div>
+        </div>
+        <div class="division-3 color-green" id="div3" style="background-color:green">
+          <div class="col-3">
+            <button onclick="onClickChangeColor('div3','red')">Red</button>
+            <button onclick="onClickChangeColor('div3','blue')">Blue</button>
+            <button onclick="onClickChangeColor('div3','green')">Green</button>
+            <button onclick="onClickChangeColor('div3','white')">White</button>
+          </div>
+
+          <div class="right-third-column order-col-3">
+            <button class="onclick" onclick="shiftColorDivision('div3','div2')"><img src="assets/up-arrow.png"/></button>
+            <button class="onclick" onclick="shiftColorDivision('div3','div1')"><img src="assets/down-arrow.png"/></button></div>
+
+        </div>
+        <div class="hide-division-4 color-white" id="div4" style="background-color:white">
+          <div class="col-4">
+            <button onclick="onClickChangeColor('div3','red')">Red</button>
+            <button onclick="onClickChangeColor('div3','blue')">Blue</button>
+            <button onclick="onClickChangeColor('div3','green')">Green</button>
+            <button onclick="onClickChangeColor('div3','white')">White</button>
+          </div>
+
+          <div class="right-fourth-column order-col-4">
+            <button class="onclick" onclick="shiftColorDivision('div4','div3')"><img src="assets/up-arrow.png"/></button>
+            <button class="onclick" onclick="shiftColorDivision('div4','div1')"><img src="assets/down-arrow.png"/></button></div>
+
+        </div>
+      </div>
+      <div class="reset-division">
+        <button onclick="resetTheRgbApp('leftside','div1','div2','div3')"><i class="material-icons " style="font-size:20px;color:black ;">replay</i>
+    Reset</button></div>
+      <button onclick="addAnotherDivision('div4')">addAnotherDivision</button>
+    </div>
+
+  </body>
+
+</html>

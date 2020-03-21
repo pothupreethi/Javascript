@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        <script>
+            /*  function Person(firstName, lastName) {
+                                                                                                                                                                                                                                                                                                                this.firstName = firstName;
+                                                                                                                                                                                                                                                                                                                this.lastName = lastName;
+                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                         const member1 = new Person("Lydial", "hgggj");
+                                                                                                                                                                                                                                                                                                             member1.getFullName = function() {
+                                                                                                                                                                                                                                                                                                                 return `${this.firstName}${this.lastName}`;
+                                                                                                                                                                                                                                                                                                             };
+
+                                                                                                                                                                                                                                                                                                             console.log(member1.getFullName());
+                                                                                                                                                                                                                                                                                                            const member2 = new Person("preethi", "pothu");
+                                                                                                                                                                                                                                                                                                            console.log(member2.getFullName());*/
+            class Person {
+                constructor(firstName, lastName) {
+                    this.firstName = firstName;
+                    this.lastName = lastName;
+                }
+                static getFullName() {
+                    return `${this.firstName}${this.lastName}`;
+                };
+            }
+            /* const member1 = new Person("preethi", "pothu");
+             try {
+                 console.log(member1.getFullName());
+             }
+             catch (e) {
+                 console.log(e);
+             }*/
+            //Person.firstName = "override firstName";
+            //Person.lastName = "override lastName";
+            //console.log(Person.getFullName());
+            let member1 = new Person("preethi", "pothu");
+            member1.getFullName = function() {
+                //console.log("member1");
+                return `${this.firstName}${this.lastName}`;
+
+            }
+            //console.log(member1.getFullName());
+            let a;
+            //console.log("a:", a);
+            try {
+                //console.log("b:", b);
+            }
+            catch (e) {
+                //console.log(e);
+            }
+            //console.log(Math.min());
+            //console.log("first Statement");
+            setTimeout(() => {
+                // console.log("2 seconds statement")
+            }, 0)
+            //console.log("last statement");
+            setTimeout(() => {
+                //console.log("0 seconds statement")
+            }, 0);
+            //console.log("last1 statement");
+            console.log("first statement");
+            let userDetails;
+            getUserDetails(1, function(userDetails) {
+                console.log("userDetails", userDetails);
+            });
+            console.log("last statement")
+
+            function getUserDetails(id, callback) {
+                setTimeout(() => {
+                    console.log("take 2 seconds time");
+                    callback({ id: id, userName: "preethi" })
+                }, 2000);
+
+
+            }
+        </script>
+
+    </body>
+
+</html>

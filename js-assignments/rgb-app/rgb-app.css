@@ -1,0 +1,144 @@
+.component {
+    display: flex;
+    height: 500px;
+    flex-wrap: wrap;
+}
+
+.left-component {
+    height: 500px;
+    background-color: green;
+    width: 200px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.right-component {
+    height: 500px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.hide-division-4{
+    background-color:white;
+    margin:5px;
+    height:90px;
+    width:100%;
+    justify-content:center;
+    display:none;
+}
+
+.color-blue {
+    background-color: blue;
+    margin: 5px;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.color-red {
+    background-color: red;
+    margin: 5px;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.color-green {
+    background-color: green;
+    margin: 5px;
+    height: 160px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.Left-side-arrows {
+    display: flex;
+    justify-content: center;
+}
+
+.right-second-column,
+.right-first-column,
+.right-third-column ,.right-fourth-column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px;
+
+
+}
+
+.btn-right-side {
+    display: flex;
+    justify-content: center;
+}
+
+.col-1,
+.col-2,
+.col-3,.col-4 {
+    display: flex;
+    justify-content: center;
+}
+
+/*
+.order-col-1 {
+    order: 0;
+}
+
+.order-col-2 {
+    order: 1;
+}
+
+.order-col-3 {
+    order: 1;
+}*/
+
+button {
+    color: white;
+    background-color: black;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+
+button:hover,
+.onclick:hover {
+    background-color: white;
+    color: black;
+}
+
+.reset-division {
+    margin-top: 20px;
+    width: 400px;
+    text-align: right;
+    order: 4;
+}
+
+.reset-button {
+    color: white;
+    background-color: black;
+    background: rgba(0, 0, 0, 3);
+
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.onclick {
+    padding-left: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 5px;
+
+}

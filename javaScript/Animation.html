@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=`, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            /*
+            @keyframes mymove {
+                0% {
+                    top: 0px;
+                    width: 100px;
+                    background-color: royalblue;
+                }
+                50% {
+                    top: 100px;
+                    width: 300px;
+                    background-color: gold;
+                }
+                100% {
+                    top: 300px;
+                    width: 600px;
+                    background-color: coral;
+                }
+            }
+
+            div:hover {
+                animation-play-state: paused;
+            }
+
+            .outer {
+                width: 100px;
+                height: 100px;
+                border-radius: 50px;
+                background-color: thistle;
+                position: relative;
+                animation-name: mymove;
+                animation-duration: 5s;
+                animation-timing-function: ease;
+                /*linear,ease,ease-in,ease-out
+                animation-iteration-count: 2;
+                animation-direction: normal;
+                animation-fill-mode: backwards;
+
+            }
+
+            /*  @keyframes mymove {
+                0% {
+                    background: red;
+                    left: 0px;
+                    top: 0px;
+                }
+                25% {
+                    background: gold;
+                    left: 200px;
+                    width: 300px;
+                    top: 0px;
+                }
+                50% {
+                    background: red;
+                    left: 200px;
+                    top: 200px;
+                    width: 500px;
+                }
+                75% {
+                    background: gold;
+                    left: 0px;
+                    top: 200px;
+                }
+                100% {
+                    background: red;
+                    left: 0px;
+                    top: 0px;
+                }
+
+
+            }
+
+            @keyframes mymove {
+                from {
+                    top: 0px;
+
+                }
+                to {
+                    top: 200px;
+                    background: yellowgreen;
+
+                }
+            }*/
+
+            @keyframes mymove {
+                from {
+                    left: 0px;
+                }
+                to {
+                    left: 50px;
+                }
+            }
+
+            .nail {
+                position: relative;
+                animation-name: mymove;
+                animation-duration: 2s;
+                animation-iteration-count: 5;
+                animation-timing-function: ease;
+            }
+
+            @keyframes nail1 {
+                50% {
+                    transform: rotate(210deg);
+                }
+            }
+
+            .outer {
+                width: 100px;
+                height: 18px;
+                border-radius: 5px;
+                animation-name: nail1;
+                animation-timing-function: ease;
+                animation-duration: 5s;
+                background-color: thistle;
+                animation-iteration-count: 5;
+                transform-origin: left;
+                margin: 150px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="outer">
+            <span class="nail">+</span>
+        </div>
+
+    </body>
+
+</html>

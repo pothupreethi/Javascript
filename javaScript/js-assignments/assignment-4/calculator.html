@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+
+  <body id="console-root">
+    <!--<script src="https://tap.ibhubs.in/utils/console.js"></script>-->
+    <script src="calculator.js"></script>
+
+    <!-- Write your html code from here-->
+
+    <!--<button onclick="onClickShowOutput()">Show Output</button>
+    <div id="output"></div>-->
+    <!-- <div class="outside">
+
+      <input type="text" class="screen" value="0" />
+      <div class="keys">
+        <button type="button" class="operator pad first" value="+">+</button>
+        <button type="button" class="operator pad" value="-">-</button>
+        <button type="button" class="operator pad" value="*">&times;</button>
+        <button type="button" class="operator" value="/">&divide;</button>
+      </div>
+      <div class="key1">
+        <button type="button" class="operator first1  mar1" value="7">7</button>
+        <button type="button" class="operator first1 mar" value="8">8</button>
+        <button type="button" class="operator first1 mar" value="9">9</button>
+
+      </div>
+      <div class="key1">
+        <button type="button" class="operator first1  mar1" value="4">4</button>
+        <button type="button" class="operator first1 mar" value="5">5</button>
+        <button type="button" class="operator first1 mar" value="6">6</button>
+
+      </div>
+      <div class="key1">
+        <button type="button" class="operator first1  mar1" value="1">1</button>
+        <button type="button" class="operator first1 mar" value="2">2</button>
+        <button type="button" class="operator first1 mar" value="3">3</button>
+
+      </div>
+      <div class="key1">
+        <button type="button" class="operator first1  mar1" value="0">0</button>
+        <button type="button" class="operator first1 mar" value=".">.</button>
+        <button type="button" class="all-clear first1 operator mar" value="all-clear">AC</button>
+
+      </div>
+
+
+
+
+
+    </div>-->
+    <div class="calculator">
+
+      <input type="text" class="calculator-screen" id="display" value="0" />
+
+      <div class="keys">
+
+        <button type="button" onclick="myfunction('+')">+</button>
+        <button type="button" onclick="myfunction('-')" )>-</button>
+        <button type="button" onclick="myfunction('*')">&times;</button>
+        <button type="button" onclick="myfunction('/')">&divide;</button>
+        <button type="button" onclick="myfunction('7')">7</button>
+        <button type="button" onclick="myfunction('8')">8</button>
+        <button type="button" onclick="myfunction('9')">9</button>
+        <button type="button" onclick="myfunction('4')">4</button>
+        <button type="button" onclick="myfunction('5')">5</button>
+        <button type="button" onclick="myfunction('6')">6</button>
+        <button type="button" onclick="myfunction('1')">1</button>
+        <button type="button" onclick="myfunction('2')">2</button>
+        <button type="button" onclick="myfunction('3')">3</button>
+        <button type="button" onclick="myfunction('0')">0</button>
+        <button type="button" class="decimal function" onclick="myfunction('.')">.</button>
+        <button type="button" class="all-clear function" onclick="allclear('0')">AC</button>
+        <button type="button" class="equal-sign " onclick="getExpressionOutput()">=</button>
+
+      </div>
+    </div>
+  </body>
+
+</html>

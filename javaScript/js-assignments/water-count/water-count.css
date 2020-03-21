@@ -1,0 +1,106 @@
+.water-container {
+    height: 300px;
+    width: 150px;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 3px solid blue;
+    text-decoration: bold;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    color: royalblue;
+}
+
+.water-app {
+    background-color: #279ddf;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+
+}
+
+
+.water-bottles {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.water-capacity {
+    height: 100px;
+    width: 75px;
+    margin: 10px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px solid blue;
+    text-decoration: bold;
+    color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+}
+
+.water-quantity {
+    font-weight: 900;
+
+}
+
+.header {
+    color: white;
+}
+
+.water-remained-status {
+    height: 87.5%;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .5s ease-in 0s;
+
+    text-align: center;
+}
+
+.water-completed-status {
+    height: 0%;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-bottom-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    transition: height .5s ease-in 0s;
+
+}
+
+.update-water-count {
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.mystyle {
+    background-color: royalblue;
+    color: white;
+}
+
+.first-style {
+    background-color: white;
+    color: royalblue;
+}
+
+.initial {
+    background-color: black;
+}
+
+.container-filled {
+    height: 12.5%;
+}

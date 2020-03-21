@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    </head>
+
+    <body>
+        <script>
+            //what is the output 
+            let cat = "Miaow"
+            let dog = "woof"
+            let animals = { cat: cat, dog: dog }
+            //alert(animals.cat); 
+            let car = { color: "silver", model: "hji" }
+            let col = car.color;
+            //object destructuring
+            let { color } = car;
+            // alert(col) 
+            //how to create
+            //an object only //rest operator 
+            const teams = { blue: 'blue', green: 'green', orange: 'orange', white: 'white', };
+            const { white, ...bgoTeams } = teams
+            // alert(bgoTeams);
+            function sumOfNumber(number1, number2) {
+                return number1 + number2;
+            }
+            // alert(sumOfNumber(1, 2, 3, 4, 5));
+
+
+            function sumOfNumbe(...args) {
+                let sum = 0;
+                for (let arg of args) {
+                    sum += arg;
+                }
+                return sum;
+            }
+            alert(sumOfNumber(1, 2, 3, 4, 5));
+
+            const name = "ibhubs";
+            const letters = [...name];
+            console.log(letters);
+        </script>
+    </body>
+
+</html>

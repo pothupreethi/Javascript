@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        <script>
+            class ClassRoomES6 {
+                                                    constructor(roomNumber, strength) {
+                                                        this.roomNumber = roomNumber;
+                                                        this.acsOn = false;
+                                                        this.fanstatus="OFF";
+                                                        this.lightsStatus="OFF";
+                                                        this.strengthOfTheClass=strength;
+                                                        this.soundSystem="OFF";
+                                                    }
+                                                    switchOnPowerEquipments(){
+                                                        this.fanstatus="ON";
+                                                        this.lightsStatus="ON";
+                                                        this.soundSystem="ON";
+                                                        
+                                                    }
+                                                    switchOffPowerEquipments(){
+                                                         this.fanstatus="OFF";
+                                                        this.lightsStatus="OFF";
+                                                        this.soundSystem="OFF";
+                                                    }
+                                                }
+            class Account {
+                constructor(name, branchName, accountNumber) {
+                    this.name = name;
+                    this.branchName = branchName;
+                    this.AccountNumber = accountNumber;
+                }
+            }
+            class SavingsAccount extends Account {
+                constructor(name, branchName, accountNumber, balance, interestRate) {
+                    super(name, branchName, accountNumber);
+                    this.balance = balance;
+                    this.interestRate = interestRate;
+                }
+            }
+            class CurrentAccount extends Account {
+                constructor(name, branchName, accountNumber, balance, interestRate, overDraftAmount) {
+                    super(name, branchName, accountNumber);
+                    this.balance = balance;
+                    this.interestRate = interestRate;
+                    this.overDraftAmount = overDraftAmount;
+                }
+            }
+            class LoanAccount extends Account {
+                constructor(name, branchName, accountNumber, loanAmount, loanDurationInMonth) {
+                    super(name, branchName, accountNumber);
+                    this.loanAmount = loanAmount;
+                    this.loanDurationInMonth = loanDurationInMonth;
+                }
+            }
+            const userAccount = new Account("PREETHI", "SBI", "123425436554");
+            console.log(userAccount);
+            const userSavingsAccount = new SavingsAccount("PREETHI", "SBI", "123425436554", 500000, "4.8%");
+            console.log(userSavingsAccount);
+            const userCurrentAccount = new CurrentAccount("PREETHI", "SBI", "123425436554", 20000, "4.8%", 20000);
+            console.log(userCurrentAccount);
+            const userLoanAccount = new LoanAccount("PREETHI", "SBI", "123425436554", 4566, 4);
+            console.log(userLoanAccount);
+        </script>
+    </body>
+
+</html>

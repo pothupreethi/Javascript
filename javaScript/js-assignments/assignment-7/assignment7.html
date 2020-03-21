@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>JS Basics</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+        <script>
+            //question 1
+            function checkTheStartingAndEndingElement(string1) {
+                let len = string1.length;
+                if (string1[0] === 't' || string1[len - 1] === 'r') {
+                    return string1;
+                }
+            }
+            let listOfElements = ["dream", "player", "read", "write", "trend"];
+            let elementsStartsWithTandEndsWithr = listOfElements.filter(checkTheStartingAndEndingElement)
+            //console.log(elementsStartsWithTandEndsWithr);
+
+
+
+            //question 2
+            function checkUniqueCharacter(value, index, array) {
+                return array.indexOf(value) == index;
+            }
+
+            function checkUniqueCharactersInString(sentence) {
+                return sentence.split("").filter(checkUniqueCharacter);
+
+            }
+
+
+            // console.log(checkUniqueCharactersInString("Was it a cat I saw"));
+            //console.log(checkUniqueCharactersInString("I did,did I?"));
+            //console.log(checkUniqueCharactersInString("Be proactive"));
+
+
+
+            //question 3
+            function changeToUpperCase(word) {
+                return word.toUpperCase();
+            }
+            let array1 = ["Cyber Security", "Data Analytics", "Blockchain", "IoT"];
+
+            let result = array1.map(changeToUpperCase);
+            // console.log(result);
+
+
+
+            //question 4
+            function squareAlternateElements(value, index) {
+                if (index % 2 == 0) {
+                    return value * value;
+                }
+                else {
+                    return value;
+                }
+            }
+            let array2 = [5, 1, 9, 6, 15];
+            result = array2.map(squareAlternateElements);
+            // console.log(result);
+
+
+
+            //question 5
+            let count = 0;
+
+            function checkStringOrNot(word) {
+                if (typeof(word) == "string") {
+                    count += 1;
+                }
+            }
+
+            let array3 = ["5", 1, "9", "6", "15"];
+            array3.forEach(checkStringOrNot)
+            // console.log(array3.length === count);
+
+
+
+            //question 6
+            let flag = 0;
+
+            function checkPalindromeOrNot(word) {
+                let string = word.toUpperCase();
+                let reverse = string.split("").reverse().join("");
+                if (reverse === string) {
+                    flag += 1;
+                }
+
+            }
+            let givenArray = ["Telugu", "Kannada", "Malayalam", "Tamil"];
+            givenArray.forEach(checkPalindromeOrNot);
+            // console.log(flag > 0);
+
+
+
+            //question 7;
+            function checkTheString(word, char, len) {
+                if (word.startsWith(char) && word.length === len) {
+                    return word;
+                }
+            }
+            givenArray = ["Telugu", "Kannada", "Malayalam", "Tamil"];
+            result = givenArray.find(element => checkTheString(element, 'T', 5));
+            //   console.log(result);
+
+
+            //question 8
+            function checkGreater(dict, num, string) {
+                if (dict.count > num && dict.type === string) {
+                    return dict;
+                }
+            }
+            let trees = [{ name: "birch", count: 10, type: "outdooe" },
+                { name: "maple", count: 7, type: "indoor/outdoor" },
+                { name: "peace lilly", count: 6, type: "indoor" },
+                { name: "oak", count: 2, type: "outdoor" },
+                { name: "lucky bamboo", count: 7, type: "indoor" }
+            ];
+            result = trees.find(element => checkGreater(element, 6, "indoor"))
+            console.log(result);
+        </script>
+        <!--
+        Write your code here
+    -->
+    </body>
+
+</html>

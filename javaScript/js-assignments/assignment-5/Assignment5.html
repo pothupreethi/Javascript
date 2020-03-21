@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <script>
+            <script>
+            function getHighestNumber(a, b) {
+                if (a > b) {
+                    //document.write(a);
+                }
+                else {
+                    // document.write(b);
+                }
+            }
+            getHighestNumber(225, 522);
+
+            function getLeastNumber(a, b) {
+                if (a < b) {
+                    //document.write(a);
+                }
+                else {
+                    //document.write(b);
+                }
+            }
+            getLeastNumber(225, 522);
+            switch ("orange") {
+                case "red":
+                    document.write("Do not cross");
+                    break;
+                case "green":
+                    //document.write("Safe to cross");
+                    break;
+                case "orange":
+                    //document.write("Cross only if it is safe");
+                    break;
+                default:
+                    document.write("Hola! You are not in the junction");
+            }
+
+            function checkEqualityOfTwoNumbers(a, b) {
+                if (a === b) {
+                    //document.write("Both are equal")
+                }
+                else {
+                    document.write("Not equal")
+                }
+            }
+            checkEqualityOfTwoNumbers('2', '2');
+
+            function isPositiveNumber(a) {
+                // a > 0 ? document.write("true") : document.write("flase");
+            }
+            isPositiveNumber(1);
+
+            function getGrade(marks) {
+                if (marks < 35) {
+                    document.write("Fail");
+                }
+                else if (marks <= 50 && marks >= 35) {
+                    document.write("D");
+                }
+                else if (marks <= 60 && marks > 50) {
+                    document.write("C");
+                }
+                else if (marks <= 70 && marks > 60) {
+                    document.write("B")
+                }
+                else if (marks <= 80 && marks > 70) {
+                    //  document.write("A")
+                }
+                else if (marks > 80) {
+                    document.write("Distinction")
+                }
+                else if (marks < 0 && marks > 100) {
+                    document.write("Invalid number")
+                }
+            }
+            getGrade(79);
+            let a = null;
+            let result;
+            result = typeof(a);
+            switch (result) {
+                case "number":
+                    document.write("Type is Number");
+                    break
+                case "undefined":
+                    document.write("Type is Undefined");
+                    break
+                case "boolean":
+                    document.write("Type is Boolean");
+                    break;
+                case "string":
+                    document.write("Type is String");
+                    break
+                case "object":
+                    //document.write("Type is Object");
+            }
+            let input1 = 13;
+            // input1 % 4 == 0 || input1 % 5 == 0 ? document.write("true") : document.write("flase
+
+            /*function isVowel(x) { return /[aeiouAEIOU]/.test(x); }
+
+            var input = '';
+            while (input.length != 1) {
+                input = prompt("Enter a character ");
+            }
+            alert(isVowel(input));*/
+            function isVowelOrConsonant(character) {
+                return (/^[aeiou]$/i).test(character);
+            }
+            let character = 'preethi';
+            let res;
+            if (character.length === 1 && typeof(character) != "number") {
+                res = isVowelOrConsonant(character);
+                //alert(typeof(res));
+                if (res == true) {
+                    document.write("Vowel");
+                }
+                else {
+                    document.write("Consonant");
+                }
+            }
+            else {
+                //document.write("Invalid Input")
+            }
+
+            function isEven(num) {
+                //num % 2 === 0 ? document.write("Even") : document.write("Odd");
+            }
+            let num = 541;
+            isEven(num);
+
+            function calculateGcd(a, b) {
+                if (b % a === 0) {
+                    //  document.write(a);
+                    return 0;
+
+                }
+
+                res = (b % a);
+                let res1 = Math.abs(res);
+                b = a;
+                a = res;
+                calculateGcd(a, b);
+
+            }
+            let p1 = 16;
+            let p2 = 88;
+            if (p1 > p2) {
+                let temp = p1;
+                p1 = p2;
+                p2 = temp;
+            }
+            calculateGcd(p1, p2);
+
+            function countNumberOfDigits(num) {
+                let count = 0;
+                while (num > 0) {
+                    num = Math.floor(num / 10);
+                    count = count + 1
+                }
+                //document.write(count);
+
+            }
+            countNumberOfDigits(24609087654)
+
+            function sumOfDigits(num) {
+                let sum = 0;
+                while (num > 0) {
+                    let r = num % 10;
+                    sum = sum + r;
+                    num = Math.floor(num / 10);
+                }
+                //document.write(sum);
+            }
+            sumOfDigits(188);
+
+            function factorialOfNumber(num) {
+                if (num >= 1) {
+                    return num * factorialOfNumber(num - 1);
+                }
+                else {
+                    return 1;
+                }
+            }
+            res = factorialOfNumber(10);
+            //document.write(res);
+            function isLeapYear(year) {
+                if (year % 4 == 0) {
+                    if (year % 100 == 0) {
+                        if (year % 400 == 0) {
+                            //document.write("Leap Year");
+                        }
+                        else {
+                            //document.write("not a leap year");
+                        }
+                    }
+                    else {
+                        // document.write("Leap year");
+                    }
+                }
+                else {
+                    //document.write("not a leap year");
+                }
+            }
+            isLeapYear(1900);
+
+            function isPerfectNumber(num) {
+                let val = 0;
+                for (let i = 1; i < num; i++) {
+                    if (num % i === 0) {
+                        val = val + i
+                    }
+                }
+                // document.write(val);
+            }
+            isPerfectNumber(6);
+
+            function factorsOfANumber(num) {
+                let arr = [];
+                let i = 1;
+                while (i <= num) {
+                    if (num % i === 0) {
+                        arr.push(i);
+                    }
+                    i = i + 1;
+                }
+                //document.write(arr);
+            }
+            factorsOfANumber(40);
+
+            function getSmallestNumberFromArray(arr1) {
+                let min = 9999999;
+                for (let i = 0; i < arr1.length; i++) {
+                    if (arr1[i] < min) {
+                        min = arr1[i];
+                    }
+                }
+                //document.write(min);
+            }
+            let arr1 = [15, 8, 10, 0, -20, 34];
+            getSmallestNumberFromArray(arr1);
+
+            function getLargestNumberFromArray(arr2) {
+                let max = -111111;
+                for (let i = 0; i < arr2.length; i++) {
+                    if (arr2[i] > max) {
+                        max = arr2[i]
+                    }
+                }
+                //document.write(max);
+            }
+            let arr2 = [12, 19, 2, 25, 9, 1]
+            getLargestNumberFromArray(arr2);
+
+            function sumOfElements(arr3) {
+                let sum = 0;
+                for (let i = 0; i < arr3.length; i++) {
+                    sum = sum + arr3[i];
+                }
+                //document.write(sum);
+            }
+            let arr3 = [12, 19, 2, 25, 9, 1];
+            sumOfElements(arr3);
+
+            function countNumberOfOddNumbers(array) {
+                let c = 0
+                for (let i = 0; i < array.length; i++) {
+                    if (array[i] % 2 != 0) {
+                        c = c + 1;
+                    }
+                }
+                //document.write(c);
+            }
+            let array = [12, 19, 2, 25, 9, 1];
+            countNumberOfOddNumbers(array);
+
+            function countNumberOfEvenNumbers(array1) {
+                let c_even = 0;
+                for (let i = 0; i < array1.length; i++) {
+                    if (array1[i] % 2 == 0) {
+                        c_even = c_even + 1;
+                    }
+                    6
+                }
+                // document.write(c_even)
+            }
+            let array1 = [12, 19, 2, 25, 9, 1];
+            countNumberOfEvenNumbers(array1);
+
+            function isEmptyObject(obj) {
+                return Object.keys(obj).length === 0;
+            }
+            let dict = { name: "john", age: 30 };
+            let op = isEmptyObject(dict);
+            //document.write(op)
+            function displayPropertyWithValue(dict1) {
+                /* let i = 0;
+                 while (i >= 0) {
+                     if (Object.keys(dict1).length === 0) {
+                         break;
+                     }
+                     else {
+                         var key = Object.keys(dict1)[i];
+                         var value = dict1[key];
+                         document.write(key);
+                         document.write(value);
+                     }
+                     i = i + 1
+                     document.write(i);
+                 }*/
+                for (let [key, value] of Object.entries(dict1)) {
+                    //document.write(`${key} ${value},`);
+                }
+
+            }
+            let dict1 = { john: "software", Ann: "hardware" }
+            displayPropertyWithValue(dict1);
+
+            function getAllPropertyNames(dict2) {
+                //document.write(Object.keys(dict2));
+            }
+            let dict2 = { john: "software", Ann: "hardware" }
+            getAllPropertyNames(dict2);
+
+            function getArrayLength(array2) {
+                //document.write(array2.length);
+            }
+            let array2 = [1, 2, 3, 4, 5, 7, 8];
+            getArrayLength(array2);
+
+            function addAnElement(array2, value) {
+                array2.push(value);
+                // document.write(array2);
+            }
+            array2 = ["a", "b", "c"];
+            num = [23, 54];
+            addAnElement(array2, num);
+
+            function removeLastElementFromArray(list1) {
+                return list1.pop(list1);
+            }
+            let list1 = ["a", "b", [23, 54, "c"]];
+            let last = removeLastElementFromArray(list1);
+            //document.write(last);
+            //question no:29
+
+            function removeElementsFromArray(arr, start, end) {
+                arr.splice(start, end);
+                return arr;
+            }
+            let ar = ["a", "b", 8, 19];
+            let start = 0;
+            let end = 4;
+            let updated_array = removeElementsFromArray(ar, start, end);
+            //document.write(updated_array);
+            //Question:30
+
+
+
+            function getSubArray(list, start, end) {
+                return list.slice(start, end);
+            }
+            let lis = [1, 2, 3, 4, 5];
+            start = 2;
+            end = 4
+            res = getSubArray(lis, start, end);
+            //document.write(res);
+
+            //question 31
+            let myArray = [1, 1.4, 2, 3, 122, ["a", "b", "f"], true, false, [0]];
+            myArray.push(10);
+            myArray.splice(0, 3);
+            myArray.splice(0, 3, 0, 1, 2)
+            myArray.splice(1, 1);
+            myArray.pop();
+            //document.write(myArray)
+        </script>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+
+        <script>
+            function addProperty(dict, property_name, value) {
+                dict[property_name] = value;
+                return dict;
+            }
+            let dict = {
+                a: "1",
+                b: "2",
+                c: "3"
+            };
+            let result = addProperty(dict, "d", "4");
+            //console.log(result);
+
+
+
+            function updateProperty(dict, property_name, value) {
+                dict[property_name] = value;
+                return dict;
+            }
+            let res = updateProperty({ a: "1", b: "2", c: "3" }, "c", "three");
+            //console.log(res);
+
+
+
+            function deleteProperty(obj, property_name) {
+                delete obj[property_name];
+                return obj
+
+
+            }
+            res = deleteProperty({ a: "1", b: "2", c: "3" }, "c");
+            //console.log(res);
+
+
+            function addObjectsToArray(arr1, arr2) {
+                //console.log(arr2);
+                const arr3 = arr1.concat(arr2);
+                return arr3;
+
+            }
+
+            const arr1 = ["a", "b", "c"];
+            const arr2 = [{ a: "1", b: "2", c: "3" }, { d: "4" }, { f: "6" }]
+            res = addObjectsToArray(arr1, arr2);
+            //console.log(res);
+
+
+
+
+
+            function addPropertyName(user, name) {
+                (user.data.friends.push(name));
+                console.log(user);
+            }
+            let user = {
+                name: "kenneth",
+                age: 28,
+                data: {
+                    username: "kennethCodesAllDay",
+                    joinDate: "March 26 2016",
+                    organization: "facebook",
+                    friends: ["sam", "kira", "Tomo"],
+                    location: {
+                        city: "San Francisco",
+                        state: "CA",
+                        country: "USA",
+                    }
+                },
+            };
+            addPropertyName(user, nam);
+
+            function addPropertyName1(user, nam) {
+                console.log(user.data)
+                    (user.data.friends.push(nam));
+                console.log(user.data);
+            }
+            user = {
+                name: "kenneth",
+                age: 28,
+                data: {
+                    username: "kennethCodesAllDay",
+                    joinDate: "March 26 2016",
+                    organization: "facebook",
+                    friends: ["sam", "kira", "Tomo"],
+                    location: {
+                        city: "San Francisco",
+                        state: "CA",
+                        country: "USA",
+                    }
+                },
+            };
+            let nam = ["ram", "John", "Weisly", "robin"]
+            addPropertyName1(user, nam);
+        </script>
+    </body>
+
+</html>

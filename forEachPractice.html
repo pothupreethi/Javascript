@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <script>
+            const array = ['apple', 'bat', 'cat'];
+            const copy = [];
+            array.forEach(function(elements) {
+                copy.push(elements);
+                copy.push("hello");
+            })
+            //console.log(copy);
+            //creating objects
+            const job = {
+                position: 'high',
+                type: "hourly",
+                accept: "true",
+                showDetails() {
+                    let value = school.position;
+                    console.log(`The school position is ${value}`);
+                }
+            }
+            const school = Object.create(job);
+            school.position = "high";
+            //school.showDetails();
+
+
+            //2 example
+            const trees = {
+                leaves: "4",
+                stem: "bulk",
+                displayTheContent() {
+                    let value = trees.leaves;
+                    let value1 = trees.stem;
+                    // console.log(`A treee has ${value} and stem is ${value1}`);
+                }
+            }
+            const tree = Object.create(trees);
+            tree.displayTheContent();
+            // creating the key oobject
+
+            const employee = {
+                boss: "michel",
+                staff: "member",
+                profit: "average"
+            }
+
+            const keys = Object.keys(employee).forEach(key => {
+                let value = employee[key];
+                console.log(value);
+                if (value === "michel" || value === "average") {
+                    //console.log(`${key}:${value}`);
+                }
+            });
+            const solution = Object.entries(employee);
+            //console.log(solution);
+            // spread operator
+            const college={
+                value:34,
+                name:"narayan",
+                experience:34,
+            };
+            const institute={
+                value:"hello",
+                
+            }
+        </script>
+    </body>
+
+</html>

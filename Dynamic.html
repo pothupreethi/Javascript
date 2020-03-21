@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    </head>
+
+    <body>
+        <script>
+            let h1Element = document.createElement("h1");
+            h1Element.textContent = "New heading!!!";
+            //document.body.appendChild(h1Element);
+            let paraElement = document.createElement("p");
+            paraElement.textContent = "paragraph content";
+            //document.body.appendChild(paraElement);
+            let myButton = document.createElement("button");
+            myButton.textContent = "Submit";
+            myButton.onclick = () => alert("hello js");
+            //document.body.appendChild(myButton);
+            let myImage = document.createElement("img");
+            myImage.src = "portfolio-website/145185-black-and-white-bokeh-background.jpg";
+            myImage.alt = "wait.............";
+            myImage.onclick = () => alert("image click triggered");
+            //document.body.appendChild(myImage);
+            //<button onclick="alert('hello js')">Submit2</button>
+            let myFunction = () => {
+                let headingObject = document.getElementById("demo");
+                headingObject.innerHTML = "hello js'''''''''";
+
+            }
+        </script>
+        <button onclick="alert('hello js')">Submit2</button>
+        <h1 id="demo">thi si initial heading......!</h1>
+        <button onclick="myFunction()">change heading</button>
+    </body>
+
+</html>

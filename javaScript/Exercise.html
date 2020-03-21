@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <STYLE>
+            .boxes {
+
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .box1,
+            .box2,
+            .box3 {
+                width: 75px;
+                border: 1px solid black;
+                text-align: center;
+                font-weight: 900;
+
+            }
+
+            .box1 {
+                background-color: red;
+                color: white;
+            }
+
+            button {
+                background-color: #4CAF50;
+                /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                width: 100px;
+                border-radius: 10px;
+            }
+        </STYLE>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+
+        <div class="boxes" id="boxes">
+            <div class="box1" id="colorRed">R</div>
+            <div class="box2" id="colorGreen">G</div>
+            <div class="box3" id="colorBlue">B</div>
+        </div>
+        <button class="pause" id="pause">Pause</button>
+        <script>
+            let redColor = document.getElementById('colorRed');
+            let variable = "red";
+            redColor.style.backgroundColor = variable;
+            let greenColor = document.getElementById('colorGreen');
+            let blueColor = document.getElementById('colorBlue');
+            let pauseButton = document.getElementById('pause');
+            let count = 0;
+            let update = redColor;
+
+            let pause = setInterval(() => {
+                count = 0;
+                if (count < 5) {
+
+                    if (redColor.style.backgroundColor === "red") {
+                        console.log("true");
+                        greenColor.style.backgroundColor = "green";
+                        greenColor.style.color = "white"
+                        redColor.style.backgroundColor = "white"
+                        redColor.style.color = "black";
+                        variable = greenColor.style.backgroundColor;
+                        console.log(variable)
+
+                    }
+                    else if (greenColor.style.backgroundColor === variable) {
+                        blueColor.style.backgroundColor = "blue";
+                        blueColor.style.color = "white";
+                        greenColor.style.backgroundColor = "white"
+                        greenColor.style.color = "black";
+                        variable = blueColor.style.backgroundColor;
+                        console.log(variable)
+                    }
+                    else if (blueColor.style.backgroundColor === variable) {
+                        redColor.style.backgroundColor = "red";
+                        redColor.style.color = "white"
+                        blueColor.style.backgroundColor = "white";
+                        blueColor.style.color = "black"
+                        variable = redColor.style.backgroundColor;
+                        console.log(variable)
+                    }
+
+                }
+                count += 1;
+            }, 1000)
+            pauseButton.onclick = () => {
+                clearInterval(pause);
+            }
+            window.onunload = () => {
+                window.localStorage.setItem('update1', update);
+            };
+
+            window.onload = () => {
+                variable = window.localStorage.getItem('update1');
+            };
+        </script>
+
+    </body>
+
+</html>

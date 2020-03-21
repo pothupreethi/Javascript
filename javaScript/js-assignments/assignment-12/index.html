@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ATM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="console-root"></div>
+    <script src="https://tap.ibhubs.in/utils/console.js"></script>
+    <!-- Write your html code from here-->
+    <div class="outer">
+      <div class="atm-app" id="atmApp">
+        <button class="deposit background" id="deposit">Deposit</button>
+        <button class="withdraw  background" id="withdraw">Withdraw</button>
+        <button class="show-balance background" id="showBalance">ShowBalance</button>
+        <button class="history background" id="history">History</button>
+      </div>
+      <div class="display-on-click-deposit" id="displayOnclickDeposit">
+        <div class="input-div">
+          <input type="text" placeholder="Deposit Amount" class="input-deposit" id="inputDeposit" />
+          <p class="error-message" id="errorMessage"> Invalid credentials</p>
+          <p class="timer" id="timerForDeposit"></p>
+        </div>
+        <button class="deposit-button-submit" id="depositButtonSubmit">Submit</button>
+      </div>
+      <div class="display-on-click-withdraw" id="displayOnclickWithdraw">
+        <div>
+          <input type="text" placeholder="Withdraw Amount" class="input-withdraw" id="inputWithdraw" />
+          <p class="error-message-for-withdraw" id="errorMessageForWithdraw"></p>
+        </div>
+        <button class="withdraw-button-submit" id="withdrawButtonSubmit">Submit</button>
+      </div>
+      <p class="current-balance" id="currentBalance"></p>
+      <div class="show-history" id="showHistory">
+        <table class="table" id="historyTable">
+          <tr>
+            <th>Transaction-Type</th>
+            <th>Amount in Rs</th>
+            <th>Balance in Rs</th>
+          </tr>
+        </table>
+      </div>
+      <p class="error-message-for-transaction" id="errorMessageForTransaction">No transaction history</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <meta http-equiv="X-UA-Compatible" content="ie=edge">
+                <title>Document</title>
+                <style>
+                        button {
+                                background-color: #4CAF50;
+                                /* Green */
+                                border: none;
+                                color: white;
+                                padding: 15px 32px;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                                font-size: 18px;
+                        }
+
+                        body {
+                                background-color: black;
+                        }
+
+                        p {
+                                color: white;
+                                font-size: 150px;
+                                text-align: center;
+                                font-weight: 900;
+                        }
+                </style>
+        </head>
+
+        <body>
+                <div id="console-root"></div>
+                <script src="https://tap.ibhubs.in/utils/console.js"></script>
+                <!--<button id="setTime" style="background-color:blue">click</button>
+                <button id="clearTime" style="background-color:red">cancel</button>
+                <script>
+                        const uiButton = document.getElementById('setTime');
+                        const uiCancel = document.getElementById('clearTime');
+                        let timer;
+                        let latestTimerId = [];
+                        uiButton.onclick = () => {
+
+
+                                uiButton.style.backgroundColor = "red";
+                                timer = setTimeout(() => {
+                                        uiButton.style.backgroundColor = "blue";
+                                        latestTimerId.push(timer);
+                                        console.log(timer)
+                                        console.log(latestTimerId);
+
+
+                                }, 3000);
+
+
+                        }
+
+                        uiCancel.onclick = () => {
+                                clearTimeout(timer);
+                                latestTimerId.forEach = (id =>
+                                        clearTimeout(id)
+                                )
+                        }
+                </script>-->
+                <p id="display"></p>
+                <script>
+                        let countDown = 10;
+                        let stop = setInterval(() => {
+                                if (countDown >= 0) {
+                                        document.getElementById('display').innerHTML = countDown;
+                                        countDown = countDown - 1;
+
+                                }
+                                else {
+                                        document.getElementById('display').innerHTML = "Happy Learning";
+                                        stopTimer();
+                                }
+
+
+                                console.log(countDown)
+                        }, 1000)
+
+                        function stopTimer() {
+                                clearInterval(stop);
+                        }
+                </script>
+
+        </body>
+
+</html>

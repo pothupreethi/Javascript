@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            .div1 {
+                height: 3cm;
+                background-color: black;
+            }
+
+            .div2 {
+                height: 3cm;
+                background-color: skyblue;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div1" id="div1"></div>
+        <div class="div2" id="div2"></div>
+        <script>
+            let div1 = document.getElementById('div1');
+            let div2 = document.getElementById('div2');
+            div1.addEventListener('cick', changeColor);
+            div1.addEventListener('click', chageWidth);
+            div2.onclick = () => {
+                div2.style.backgroundColor = "orange";
+            }
+            div2.onclick = () => {
+                div2.style.width = "1cm";
+            }
+
+            function changeColor() {
+                div1.style.backgroundColor = "GREEN";
+            }
+
+            function chageWidth() {
+                div1.style.width = "1cm"
+            }
+        </script>
+
+    </body>
+
+</html>

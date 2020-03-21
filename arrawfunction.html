@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://s3-ap-southeast-1.amazonaws.com/beta.tap.ibhubs.in/console.js"></script>
+
+
+        <input type="text" palceholder="Name" id="name" />
+        <input type="password" id="password" />
+        <button id="submit">Button</button>
+        <img id="image" src="https://d1ov0p6puz91hu.cloudfront.net/logos/iBhubs_logo.svg" />
+        <script>
+            // const nameElement = document.getElementById("name");
+            document.getElementById('name').onkeydown = (event) => {
+                //console.log(`value on keypress, ${event.target.value}`);
+
+                if (event.keyCode === 13) document.getElementById("password").focus();
+            }
+            document.getElementById("password").onkeydown = (event) => {
+                if (event.keyCode === 13) document.getElementById("submit").click();
+            }
+
+            /* nameElement.onchange = event => {
+                 console.log(`will log when vlue changes,blurred,${event.target.value}`);
+             }
+             const buttonElement = document.getElementById("loginbutton");
+             buttonElement.onclick = () => {
+                 console.log(`button clicked,${event.target}`);
+             }
+             */
+            document.getElementById("image").onload = () => {
+                console.log("image is loaded")
+            }
+            document.getElementById("submit").onclick = (event) => {
+                alert("login")
+            }
+        </script>
+
+    </body>
+
+</html>

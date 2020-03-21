@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let myArray = [3.4, "preethi", "7", "js", -4.5]
+        //alert(myArray)
+        //document.write(myArray)
+        //document.write(myArray[1])
+        myArray[2] = "lokesh"
+        //document.write(myArray[2])
+        myArray[7] = "HELLO"
+        //document.write(myArray)
+        myArray.push("hafeez")
+        //document.write(myArray)
+        myArray.pop()
+        myArray.pop()
+        myArray.pop()
+        //document.write(myArray)
+        myArray.pop()
+        //alert(myArray.pop())
+        //alert(myArray.length)
+        myArray[9] = 78
+        myArray.pop()
+        //document.write(myArray.length)
+        // let my_array = [1, 2, [3, 4, 5], 9];
+        //document.write(my_array[1].length)
+        let my_Array = [
+            ["ibhubs"], 7, ['A', -1, 3.5, 0], 5, "js"
+        ];
+        // document.write(my_Array)
+        //document.write(my_Array);
+        //document.write("<\br> ");
+
+        my_Array[2][2] = 10;
+        //document.write(my_Array);
+
+        /* document.write("\n")
+         my_Array[2].push("5")
+         document.write(my_Array)
+         document.write("\n")
+         my_Array[0].pop()
+         document.write(my_Array)
+         document.write("\n")
+         my_Array.pop()
+         document.write(my_Array)
+         document.write("\n")
+         my_Array[7] = "hello"
+         document.write(my_Array)
+         document.write("\n")
+         let len = my_Array.length
+         my_Array.push(len)
+         document.write(my_Array)
+         document.write("\n")*/
+        let tyre1 = {
+
+            brand: "MRF",
+            type: "Tube less",
+            rimDiameter: "17 inches",
+
+
+        };
+        let tyre2 = {
+
+            brand: "MRF",
+            type: "Tube less",
+            rimDiameter: "17 inches",
+
+
+        };
+        let car = {
+            color: "Red",
+            "fuel type": "petrol",
+            tyre: tyre1,
+            tyreslist: [tyre1, tyre2],
+            start() {
+                return "started";
+            },
+            stop() {
+                return "stop";
+            }
+
+
+        };
+        //alert(car.start());
+        //alert(car.stop())
+        car.model = "venue";
+        car.weight = "4 tons";
+        //document.write(car.color);
+        //document.write(car.type)
+        //document.write(car['fuel type']);
+        //document.write(car['color'])
+        let fuelType = 'fuel type';
+        // document.write(car[fuelType])
+        car.color = "violet";
+        //alert(car.color);
+        car.model = "kia";
+        car.fuelCapacity = "43 liters";
+        // document.write(car.model);
+        //document.write(car.fuelCapacity, car.model);
+        delete car["fuel type"]
+        // document.write(car.weight)
+        //alert(car["tyre"]["brand"]);
+        function startCar() {
+            return "started";
+        }
+
+        function stopCar() {
+            return "stopped";
+        }
+        let car1 = {
+            start: startCar(),
+            stop: stopCar(),
+        };
+        let car2 = {
+            start: startCar(),
+            stop: stopCar(),
+        };
+        //alert(car1.hasOwnProperty("start"));
+        //alert(`car1 is ${car1.start}`);
+        //alert(`car2 is ${car2.start}`);
+        //alert("car1 and car2 are running fast");
+        //alert("runnnig");
+        //alert(`car1 is ${car1.stop}`);
+        //alert(`car2 is ${car2.stop}`);
+        function busbreak() {
+            return "Break";
+        }
+        let person = {
+            firstName: "Jhon",
+            lastName: "Jacob",
+            age: 38,
+            gender: "Male"
+        };
+        let bus = {
+            owner: "Kallada travels",
+            color: "Red",
+            type: "Ac",
+            breakTheBus: busbreak(),
+            "seating capacity": 45,
+            passenger: ["Satya Nadella", "Tim cool", "Jeff Bezos"],
+            start: function() {
+                return "Bus is started";
+            },
+            stop: function() {
+                return "Bus is stopped"
+            }
+        };
+        bus.driver = "Hafeez";
+        bus.driver.experience = 15;
+        bus.owner = "Morning star";
+        delete[bus.age];
+        bus.fullName = person.firstName + person.lastName;
+        delete[person.firstName];
+        delete[person.lastName];
+        //alert(bus.start());
+        //alert(bus.stop());
+        let selectedColor = null;
+        // alert(typeof(selectedColor));
+        const innerRate = 0.5;
+        try {
+            innerRate = 1.5
+            alert(innerRate);
+        }
+        catch (e) {
+            document.write(e)
+        }
+
+        //alert(null == undefined);
+        /* let myFunction = () => {
+               let headingObject = document.getElementById("demo");
+               headingObject.parentNode.removeChild(headingObject);
+           }*/
+    </script>
+
+    <body>
+
+        <h1 id="demo">My page onclick remove
+            <h1>
+                <button onclick="myFunction()">Submit</button>
+                <script>
+                    let count = 0;
+                    let myFunction = () => {
+
+                        let headingObject = document.getElementById("demo");
+                        if (headingObject.style.display === "none") {
+                            headingObject.style.display = "block"
+                        }
+                        else {
+                            headingObject.style.display = "none"
+                        }
+
+
+                    }
+                </script>
+                <!-- <p id="p1">Hello world</p>
+                <p id="p2">Hellooooo world</p>
+                <script>
+                    document.getElementById("p2").style.color = "green";
+                    document.getElementById("p2").style.fontSize = "100px";
+                    document.getElementById("p1").style.color = "violet";
+                </script>-->
+    </body>
+
+</html>

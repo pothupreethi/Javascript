@@ -1,0 +1,186 @@
+.login-form {
+    background-color: white;
+
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+
+}
+
+.col-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fill-this-form {
+    color: grey;
+}
+
+.first-name,
+.last-name,
+.mobile-number,
+.email,
+.password,
+.confirmed-password,
+.date-of-birth {
+    background-color: #f1f1f1;
+    color: black;
+    border: none;
+
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+
+    width: 100%;
+}
+
+.male,
+.female,
+.other {
+    margin-top: 5px;
+
+}
+
+.branches-date {
+    width: 100%;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.address-div {
+    display: flex;
+
+}
+
+.address {
+    flex-grow: 2;
+    height: 45px;
+}
+
+
+
+
+.set-typing {
+    display: flex;
+    margin-top: 10px;
+}
+
+.range-of-typing {
+    flex-grow: 1;
+}
+
+
+.sign-up {
+    border-bottom: 1px solid #c6c6c6;
+    margin: 10px;
+}
+
+.first-name,
+.last-name,
+.mobile-number,
+.email,
+.password,
+.confirmed-password,
+.gender,
+.branches-date,
+.address-div,
+.set-typing,
+.check-terms,
+.submit-div {
+    height: 30px;
+    width: 92%;
+}
+
+.submit-div {
+    text-align: center;
+}
+
+.signup-button {
+    width: 100px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #008ae6;
+}
+
+.outside {
+    text-align: center;
+    color: white;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    margin-top: 0px;
+}
+
+.terms-of-use {
+    color: #008ae6;
+}
+
+form {
+    margin: 5px;
+    color: grey;
+
+}
+
+input {
+    font-size: 18px;
+}
+
+.main-section {
+    width: 700px;
+    margin-left: 180px;
+    margin-top: 0px;
+    background: linear-gradient(-90deg, #a300cc, #0099cc);
+    font-size: 20px;
+}
+
+.address-main {
+    padding-top: 10px;
+}
+
+.login {
+    text-align: center;
+    color: white;
+}
+
+.error-message {
+    display: none;
+    color: red;
+    text-align: center;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.signup-form-first-name,
+.signup-form-last-name {
+    margin-right: 10px;
+    width: 46%;
+}
+
+.first-name,
+.last-name {
+    margin-bottom: 0px;
+}
+
+.col-1,
+.mobile-num,
+.email-div,
+.password-div,
+.confirmed-password-div,
+.gender,
+.branches-date,
+.date-of-birth-div,
+.address-div,
+.set-typing,
+.check-terms {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 60px;
+}
+
+.set-typing1 {
+    padding-top: 15px;
+}

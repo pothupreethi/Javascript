@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <style>
+            img {
+                width: 1000px;
+                height: 500px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="console-root"></div>
+        <script src="https://tap.ibhubs.in/utils/console.js"></script>
+        <img id="firstImage" class="image" src="portfolio-website/img_1.jpg"></img>
+        <script>
+            let image = document.getElementById("firstImage");
+            console.log(image);
+            let imageArray = ["portfolio-website/img_2.jpg", "portfolio-website/img_1.jpg"];
+            let imgIndex = 0;
+
+            function slide() {
+                image.setAttribute("src", imageArray[imgIndex]);
+                console.log(imageArray[imgIndex])
+                imgIndex += 1;
+                if (imgIndex == 2) {
+                    imgIndex = 0;
+                }
+            }
+            setInterval(slide, 2000);
+        </script>
+    </body>
+
+</html>
